@@ -1,0 +1,6 @@
+#Запуск бота
+docker build -t telegram-bot .
+docker-compose up -d
+
+#Добавить в крон после запуска
+0 0 * * * docker restart *CONTAINER_NAME*
